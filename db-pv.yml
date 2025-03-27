@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: db-vol
+spec:
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 1000Mi
+  hostPath:
+    path: /tmp/db_data
